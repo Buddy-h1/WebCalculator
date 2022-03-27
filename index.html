@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebCalculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+<div id="calculator" class="calculator">
+    <div class="output-field">
+        <p onclick="switchOnDeg()" id="deg" class="units">DEG</p>
+        <p onclick="switchOnRad()" id="rad" class="units">RAD</p>
+        <p class="backward" id="backward"> </p>
+        <p id="expression">0</p>
+    </div>
+    <div class="line"></div>
+    <div id="buttons-field-one" class="buttons">
+        <div onclick="buttonFieldChange()" class="btn btn-orange">F</div>
+        <div onclick="allClear()" class="btn btn-orange">AC</div>
+        <div onclick="deleteLastCharacter()" class="btn btn-orange">DEL</div>
+        <div onclick="exponentialNumberInput()" class="btn btn-orange">EE</div>
+
+        <div onclick="inputNumbers(this)" class="btn btn-white">7</div>
+        <div onclick="inputNumbers(this)" class="btn btn-white">8</div>
+        <div onclick="inputNumbers(this)" class="btn btn-white">9</div>
+        <div onclick="inputSign(this)" class="btn btn-orange">/</div>
+
+        <div onclick="inputNumbers(this)" class="btn btn-white">4</div>
+        <div onclick="inputNumbers(this)" class="btn btn-white">5</div>
+        <div onclick="inputNumbers(this)" class="btn btn-white">6</div>
+        <div onclick="inputSign(this)" class="btn btn-orange">*</div>
+
+        <div onclick="inputNumbers(this)" class="btn btn-white">1</div>
+        <div onclick="inputNumbers(this)" class="btn btn-white">2</div>
+        <div onclick="inputNumbers(this)" class="btn btn-white">3</div>
+        <div onclick="inputSign(this)" class="btn btn-orange">+</div>
+
+        <div onclick="inputNumbers(this)" class="btn btn-white">0</div>
+        <div onclick="inputNumbers(this)" class="btn btn-white">.</div>
+        <div onclick="equals()" class="btn btn-white">=</div>
+        <div onclick="inputSign(this)" class="btn btn-orange">-</div>
+    </div>
+    <div id="buttons-field-two" class="buttons">
+        <div onclick="inputLn()" class="btn btn-grey">ln</div>
+        <div onclick="inputSin()" class="btn btn-grey">sin</div>
+        <div onclick="inputCos()" class="btn btn-grey">cos</div>
+        <div onclick="inputTan()" class="btn btn-grey">tan</div>
+
+        <div onclick="inputLg()" class="btn btn-grey">lg</div>
+        <div onclick="inputAsin()" class="btn btn-grey">asin</div>
+        <div onclick="inputAcos()" class="btn btn-grey">acos</div>
+        <div onclick="inputAtan()" class="btn btn-grey">atan</div>
+
+        <div onclick="inputSqrt(this)" class="btn btn-grey btn-sqrt">√</div>
+        <div onclick="inputSign(this)" class="btn btn-grey btn-extent">x<sup>y</sup></div>
+        <div onclick="inputExtentE()" class="btn btn-grey btn-extent-e">e<sup>x</sup></div>
+        <div onclick="plusMinus()" class="btn btn-grey">+/-</div>
+
+        <div onclick="inputPi()" class="btn btn-grey">π</div>
+        <div onclick="inputE()" class="btn btn-grey">e</div>
+        <div onclick="buttonFieldChange()" class="btn btn-orange btn-back">back</div>
+
+
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
